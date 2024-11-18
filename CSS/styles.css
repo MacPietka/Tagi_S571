@@ -46,13 +46,12 @@ body, html {
   position:absolute;
   width: 250px;
   height: 800px;
-  
-  bottom: 100;
-
+  bottom: 10;
   justify-content: center; /* Aligns items horizontally */
-
   text-align: center;
-
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: white;
   padding: 10px; /* Optional: for better spacing inside the tile */
   /*visibility: hidden;*/ 
 }
