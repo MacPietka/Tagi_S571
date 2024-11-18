@@ -39,6 +39,28 @@ body, html {
             background-color: #e0e0e0; /* Slightly darker grey background */
         }
 
+
+
+.kulfon{
+  position:absolute;
+  width: 250px;
+  height: 400px;
+  left: 100;
+  top: 100;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: center; /* Aligns items horizontally */
+  margin: 0px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+  color: white;
+  padding: 10px; /* Optional: for better spacing inside the tile */
+  /*visibility: hidden;*/ 
+}
+
 .kod {
   position:absolute;
   width: 250px;
