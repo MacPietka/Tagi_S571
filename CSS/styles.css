@@ -15,6 +15,7 @@ body, html {
             display: flex;
             height: 100vh; /* Use 100% of the viewport height */
         }
+
         .column {
             
             overflow-y: auto; /* Make columns scrollable vertically */
@@ -44,19 +45,14 @@ body, html {
 .kulfon{
   position:absolute;
   width: 250px;
-  height: 400px;
-  left: 100;
-  top: 100;
-  border: 1px solid black;
-  border-radius: 5px;
-  display: flex;
-  align-items: bottom; /* Aligns items vertically */
+  height: 800px;
+  
+  bottom: 100;
+
   justify-content: center; /* Aligns items horizontally */
-  margin: 0px auto;
+
   text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 60px;
-  color: white;
+
   padding: 10px; /* Optional: for better spacing inside the tile */
   /*visibility: hidden;*/ 
 }
