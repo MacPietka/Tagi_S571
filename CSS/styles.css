@@ -2,8 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* Prevent the body from scrolling */
-  /*font-size: 16px;*/
+  overflow: hidden;
   color: #000;
   background-color: #fff;
   font-family: 'Oxygen', sans-serif;
@@ -13,12 +12,12 @@ body, html {
 
         .container {
             display: flex;
-            height: 100vh; /* Use 100% of the viewport height */
+            height: 100vh;
         }
 
         .column {
             
-            overflow-y: auto; /* Make columns scrollable vertically */
+            overflow-y: auto;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -37,23 +36,23 @@ body, html {
         }
         .right-column {
             flex: 1;
-            background-color: #e0e0e0; /* Slightly darker grey background */
+            background-color: #e0e0e0;
         }
 
 
 
 .kulfon{
-  position:absolute;
+  position: fixed;
   width: 250px;
   height: 800px;
-  bottom: 10;
-  justify-content: center; /* Aligns items horizontally */
+  top: 10px;
+  left: 10px;
+  justify-content: center;
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 20px;
   color: white;
-  padding: 10px; /* Optional: for better spacing inside the tile */
-  /*visibility: hidden;*/ 
+  padding: 10px;
 }
 
 .kod {
@@ -62,19 +61,17 @@ body, html {
   height: 400px;
   left: 100;
 
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   display: flex;
-  align-items: center; /* Aligns items vertically */
-  justify-content: center; /* Aligns items horizontally */
+  align-items: center;
+  justify-content: center;
   margin: 0px auto;
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 60px;
   color: white;
-  padding: 10px; /* Optional: for better spacing inside the tile */
-  /*visibility: hidden;*/
-  
+  padding: 10px;  
 }
   
 .tile {
@@ -84,21 +81,41 @@ body, html {
   background:#008ae6;
   border-radius: 5px;
   display: flex;
-  align-items: center; /* Aligns items vertically */
-  justify-content: center; /* Aligns items horizontally */
+  align-items: center;
+  justify-content: center;
   margin: 0px auto;
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 120px;
   color: white;
-  padding: 10px; /* Optional: for better spacing inside the tile */
+  padding: 10px;
+  visibility: visible;
+}
+
+.FS {
+  width: 250px;
+  height: 50px;
+  border: 2px solid black;
+  background:#008ae6;
+  border-radius: 5px;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
   visibility: visible;
 }
 
 .container-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  row-gap: 25px; /* gap between rows */
-  column-gap: 50px; /*minimum gap between tiles */
-  padding: 25px 25px; /* Consistent spacing from the viewport edges */
+  row-gap: 25px;
+  column-gap: 50px;
+  padding: 25px 25px;
 }

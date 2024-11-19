@@ -1,29 +1,28 @@
         let numer = '';
         let ktoryTag = '';
 
-        function wybierz() {
+function wybierz() {
             numer = this.textContent;
             ktoryTag = 'Tag' + " " + numer;
-
-            
-
-
             getElementByInnerText(ktoryTag);
 
-        }
+}
 
 
-        const buttons = document.querySelectorAll('.tile');
+const buttons = document.querySelectorAll('.tile');
+buttons.forEach(button => {
+              button.addEventListener('click', wybierz);
+            }
+);
 
-        buttons.forEach(button => {
-          button.addEventListener('click', wybierz);
-          }
-          );
+const guziki = document.querySelectorAll('.FS');
+guziki.forEach(guzik => {
+              guzik.addEventListener('click', fullScreen);
+            }
+);
 
 
-
-
-                function getElementByInnerText(text) {
+function getElementByInnerText(text) {
             const elements = document.querySelectorAll('.kod');
             
             elements.forEach(element => {
@@ -33,15 +32,11 @@
                     element.style.opacity = '0';
                 }
             });
-        }
+}
 
-var noSleep = new NoSleep();
-
-document.addEventListener('click', function enableNoSleep() {
-  document.removeEventListener('click', enableNoSleep, false);
-  noSleep.enable();
-}, false);
-
+function fullScreen(){
+  document.querySelector("body").requestFullscreen();
+}
 
 
 
